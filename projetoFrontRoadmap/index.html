@@ -29,33 +29,46 @@
         </div>
     </header>
 
-    <aside>
-        <div class="aside">
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#sobre" class="active">Sobre</a></li>
-                <li><a href="#habilidades" class="active">Habilidades</a></li>
-                <li><a href="#servicos" class="active">Serviços</a></li>
-                <li><a href="#projetos" class="active">Projetos</a></li>
-                <li><a href="#contato" class="active">Contato</a></li>
-            </ul>
-        </div>
-
-    </aside>
     <main>
+        <div class="sobre">
+            <h1 id="sobreTitle">Sobre mim</h1>
+            <p>Minha introdução</p>
+        </div>
         <div class="about">
-            <h1>Sobre mim</h1>
             <div class="left-about">
                 <img src="MEU LOGO.png" alt="" class="aboutImg">
             </div>
             <div class="right-about">
-                <p>Hi, I'm Anderson Reis, a passionate FullStack developer with a strong focus on building dynamic and scalable web applications. With over 2 years of experience studying and working with technologies like React, Node.js, MySQL, and SQL Server, I have developed a diverse set of skills that span both front-end and back-end development.</p>
 
-                <p>I am currently a freelancer and constantly expanding my knowledge in the field of software development. I'm working towards mastering technologies like Java, Docker, and JavaScript frameworks, including React, Next.js, and Angular. My goal is to become an expert FullStack developer and contribute to impactful projects.</p>
+                <p><strong>Hi, I'm Anderson Reis, a FullStack developer with 2+ years of experience in React, Node.js, MySQL, and SQL Server.</strong></p>
+                <p>As a freelancer, I'm focused on mastering Java, Docker, and frameworks like React, Next.js, and Angular.</p>
+                <p>My goal is to become an expert FullStack developer and contribute to impactful projects.</p>
+                <p>I'm also passionate about martial arts and personal growth, aiming for continuous learning and financial freedom.</p>
+                <p>See my projects on <a href="https://github.com/AndersonReis04" target="_blank">GitHub</a> or connect on <a href="https://www.linkedin.com/in/anderson-reis04" target="_blank">LinkedIn</a>.</p>
+                
+                <div class="aboutInfo">
+                    <div class="aboutInfoItem">
+                        <span>03+</span>
+                        <p>Anos</p>
+                        <p>de Experiência</p>
+                    </div>
+                    <div class="aboutInfoItem">
+                        <span>10+</span>
+                        <p>Projetos</p>
+                    </div>
+                </div>
 
-                <p>Besides my professional pursuits, I'm also passionate about martial arts, with a strong dedication to improving my physical strength and performance. I love pushing myself to new heights, whether in my career or through my personal development goals, including reading, continuous learning, and achieving financial freedom.</p>
+                <button class="btn-about" onclick="downloadPDF()">Download CV</button>
 
-                <p>Feel free to check out my projects on <a href="https://github.com/AndersonReis04" target="_blank">GitHub</a> or connect with me on <a href="https://www.linkedin.com/in/anderson-reis04" target="_blank">LinkedIn</a>. Let's build something amazing together!</p>
+                <script>
+                function downloadPDF() {
+                    const link = document.createElement('a');
+                    link.href = './CV_AndersonReis.pdf';  // Caminho do arquivo PDF
+                    link.download = 'CV_AndersonReis.pdf';       // Nome do arquivo baixado
+                    link.click();
+                }
+                </script>
+
             </div>
         </div>
     </main>

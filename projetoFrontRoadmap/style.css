@@ -1,8 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 /* navbar */
 .nav{
@@ -53,6 +56,8 @@
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
+    padding: 15%;
+    border-radius: 10px;
 }
 .nav a:hover{
     color: #000000;
@@ -122,36 +127,33 @@
 
 /* header */
 
-/*aside*/
-aside {
-    position: fixed;
-    top: 100vh; 
-    left: 0;
-    width: 50px; 
-    height: 100%; 
-    background-color: black;
-    z-index: 1; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-aside ul {
-    list-style: none;
+/*main*/
+.sobre{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-}
-
-aside li {
+    align-items: center;
+    background-color: #282828;
     color: #fff;
-    font-size: 20px;
 }
-/*aside*/
 
-/*main*/
+.sobre h1{ 
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.sobre p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: releway, sans-serif;
+}
+
 .about{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -161,23 +163,91 @@ aside li {
     color: #fff;
 }
 
-.about h1{
+.aboutImg{
+    align-items: center;
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 30%;
+}
+
+.right-about{
+    align-items: center;
+    width: 50%;
+    margin-right: 15%; 
+}
+
+.right-about p{
     font-style: normal;
-    font-weight: 800;
-    font-size: 2rem;;
-    line-height: 72px;
+    font-size: 15px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: raleway, sans-serif;
+}
+.right-about p a{
+    text-decoration: none;
+    color: #000fe3;
+    transition: 0.5s;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+.right-about button{
+    font-style: normal;
+    margin-top: 3%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
     text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.right-about button:hover{
+    background-color: #fff;
+    font-weight: 500;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.aboutInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
     color: #FFFFFF;
 }
 
-.aboutImg{
+.aboutInfoItem{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin-right: 5%;
-    border-radius: 50%;
+    margin: 0 24px;
+    text-align: center;
+}
+
+.aboutInfoItem span{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.aboutInfoItem p{
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    color: #FFFFFF;
 }
 
 /*main*/
