@@ -100,49 +100,73 @@
                     </ul>
                 </div>
             </div>
-            <section class="timeline">
-                <h1>Minha Experiência</h1>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h2>2022 - Início dos Estudos</h2>
-                            <p>Início dos estudos em tecnologia, aprendendo Java, SQL e lógica de programação.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h2>2023 - Projetos Iniciais e Estágio</h2>
-                            <p>Primeiros projetos pessoais com React, Node.js e MySQL. Estágio como desenvolvedor FullStack.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h2>2024 - Freelance e Mercado Virtual</h2>
-                            <p>Trabalhando como freelancer e desenvolvendo um mercado virtual utilizando tecnologias modernas como React e Node.js.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h2>2024 - Grêmio Estudantil</h2>
-                            <p>Atuação no grêmio estudantil, contribuindo para projetos tecnológicos na escola e dando palestras sobre tecnologia.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h2>2024 - Aprofundamento em Java e Competição</h2>
-                            <p>Foco em algoritmos, estruturas de dados e participação em competições de programação usando Java.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h2>Presente - FullStack e Desenvolvimento Profissional</h2>
-                            <p>Desenvolvimento de projetos FullStack, estudando novas tecnologias, como Docker, DevOps e práticas modernas de desenvolvimento.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="year">2022</span>
+                <p>Início dos estudos em desenvolvimento web</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">2023</span>
+                <p>Primeiro CRUD no banco de dados com Node.js</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">2024</span>
+                <p>Trabalhando como freelancer FullStack e construindo presença digital</p>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+
+
+        <div class="servicos">
+            <h1>Serviços</h1>
+            <div class="servicosContainer">
+                <div class="servico">
+                    <h2>Desenvolvimento Web</h2>
+                    <img src="icone-desenvolvimento-web.png" alt="Desenvolvimento Web">
+                    <button class="saibaMais" data-servico="desenvolvimentoWeb">Saiba mais</button>
+                </div>
+                <div class="servico">
+                    <h2>Consultoria</h2>
+                    <img src="icone-consultoria.png" alt="Consultoria">
+                    <button class="saibaMais" data-servico="consultoria">Saiba mais</button>
+                </div>
+                <div class="servico">
+                    <h2>Manutenção</h2>
+                    <img src="icone-manutencao.png" alt="Manutenção">
+                    <button class="saibaMais" data-servico="manutencao">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="infoCard" class="infoCard">
+            <div class="infoCardContent">
+                <span class="closeBtn">&times;</span>
+                <h2 id="infoCardTitle"></h2>
+                <p id="infoCardDescription"></p>
+            </div>
+        </div>
+
+        <div class="carrossel">
+            <div class="carrosselContainer">
+                <div class="carrosselItem">
+                    <img src="sua-imagem.png" alt="Imagem do Carrossel">
+                    <a href="https://github.com/seu-usuario" target="_blank" class="githubButton">Visite meu GitHub</a>
+                </div>
+                <div class="carrosselItem">
+                    <img src="sua-imagem.png" alt="Imagem do Carrossel">
+                    <a href="https://github.com/seu-usuario" target="_blank" class="githubButton">Visite meu GitHub</a>
+                </div>
+                <div class="carrosselItem">
+                    <img src="sua-imagem.png" alt="Imagem do Carrossel">
+                    <a href="https://github.com/seu-usuario" target="_blank" class="githubButton">Visite meu GitHub</a>
+                </div>
+                <!-- Adicione mais itens conforme necessário -->
+            </div>
+            <button class="prevBtn">&#10094;</button>
+            <button class="nextBtn">&#10095;</button>
+        </div>
+
     </main>
     <footer></footer>
     <script src="./script.js"></script>
